@@ -1,0 +1,31 @@
+.name-quote{
+	font-weight: bold;
+	font-style: italic;
+}
+
+.mainArticle p{
+	margin-left: 3%;
+	margin-right: 4%;
+	text-align: justify;	
+}
+
+.mainArticle ul li{
+	margin-left: 6%;
+	list-style-type: circle;
+}
+
+.mainArticle{
+	margin-bottom: 6%;
+}
+
+.mainArticle a{
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+
+.mainArticle a:hover{
+	cursor: pointer;
+	color: #3E3737;
+	text-decoration: underline;
+}

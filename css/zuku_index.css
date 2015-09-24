@@ -1,0 +1,104 @@
+body{
+	background: #3E3737;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: arial;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+header{
+	background: #FFFFFF;
+	width: 100%;
+	color: #000;
+}
+.logo{
+	margin-left: 5%;
+	padding-top: 2%;
+}
+.logo h1{
+	width: 200px;
+	margin: 0;
+}
+.logo ul li{
+	display: inline-block;
+	vertical-align: middle;
+}
+.logo img{
+	width: 44px;
+	height: 44px;
+}
+nav{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav ul li{
+	display: inline-block;
+	padding: 10px;
+	color: #000;
+}
+nav a{
+	text-decoration: none;
+	color: #000;
+}
+nav a:hover{
+	border-bottom: 1px solid red;
+}
+main{
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	background: #fff;
+	padding: 10px;
+	margin-top: 2%;
+	border-radius: 15px;
+	color: #000;
+	margin-bottom: 4%;
+}
+
+main header{
+	margin-left: 2%;
+	width: auto;
+}
+main figure{
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+main figure img{
+	border-radius: 15px;
+	border: 2px solid #3E3737;	
+	margin-left: auto;
+	margin-right: auto;
+}
+main figure figcaption{
+	color: #3E3737;
+	font-style: italic;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid red;
+	border-bottom-right-radius: 15px;
+}
+
+footer{
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	width: auto;
+	color: #000;
+	text-align: center;
+	vertical-align: middle;
+	left: 0;
+	right: 0;
+	height: 25px;
+	padding-top: 5px;
+	font-style: italic;
+}
