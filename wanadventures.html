@@ -71,7 +71,7 @@
 			var currentstyle = window.getComputedStyle(wan);
     		var currbackpos = parseInt(currentstyle.getPropertyValue('background-position').split("px")[0]);
     		var currpos = parseInt(currentstyle.getPropertyValue('left').split("px")[0]);
-			wan.style.backgroundPosition = (currbackpos-250).toString()+"px 0";
+			wan.style.backgroundPosition = (currbackpos-300).toString()+"px 0";
 			wan.style.left = (currpos+100).toString()+"px";
 		}
 		function moveBackward(){
@@ -79,7 +79,7 @@
 			var currentstyle = window.getComputedStyle(wan);
     		var currbackpos = parseInt(currentstyle.getPropertyValue('background-position').split("px")[0]);
     		var currpos = parseInt(currentstyle.getPropertyValue('left').split("px")[0]);
-			wan.style.backgroundPosition = (currbackpos+250).toString()+"px 0";
+			wan.style.backgroundPosition = (currbackpos+300).toString()+"px 0";
 			wan.style.left = (currpos-100).toString()+"px";
 		}
 		function nameWan(){

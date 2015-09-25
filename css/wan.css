@@ -19,9 +19,9 @@ body{
 	position: relative;
 	top:0;
 	left: 0;
-	width: 260px;
-	height: 370px;
-	background:url("char.png") -30px 0px; 
+	width: 300px;
+	height: 400px;
+	background:url("char.png") 0px 0px; 
 }
 .panel{
 	width: 10%;
