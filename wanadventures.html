@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<!--Título de la página-->
+		<title>wanderer's adventures</title>
+		<!--Definición de codificación usada-->
+		<meta charset="utf-8">
+		<!--Links a las hojas de estilos-->
+		<link rel="stylesheet" type="text/css" href="css/zuku_index.css">
+		<link rel="stylesheet" type="text/css" href="css/k_index.css">
+		<link rel="stylesheet" type="text/css" href="css/wan.css">
+	</header>
+	<body>
+		<!--Sección de encabezado de la página-->
+		<header>
+			<div class="logo">
+				<ul>
+					<li><img src="img/k_logo.jpg" alt="logo"></li>
+					<li><h1 class="title">kortenu</h1></li>
+				</ul>
+			</div>
+			<div></div>
+			<!--Barra de navegación de la página-->
+			<nav>
+				<ul>
+					<li>
+						<a href="">inicio</a>
+					</li>
+					<li>
+						<a href="zuku_index.html">zukulento</a>
+					</li>
+					<li>
+						<a href="about.html">sobre nosotros</a>
+					</li>
+					<li>
+						<a href="wanadventures.html">wanderer's adventures</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section class="panel">
+			<div>
+				<ul>
+					<li>nombralo...</li>
+					<li><input type="text" id="wanName" placeholder="nombre"></li>
+					<li><a onclick="nameWan()" >nombrar</a></li>
+				</ul>
+			</div>
+		</section>
+		<section class="game">
+			<div class="background">
+				<div>
+					<div id="wan" title="wan :)"></div>
+				</div>
+			</div>	
+		</section>
+	</body>
+	<script type="text/javascript">
+		document.onkeypress = function(evt) {
+		    evt = evt || window.event;
+		    var charCode = evt.keyCode || evt.which;
+		    if(charCode == 39){//Flecha derecha
+		    	moveForward();
+		    }
+		    if(charCode == 37){//Flecha izquierda
+		    	moveBackward();
+		    }
+		};
+		function moveForward(){
+			var wan = document.getElementById('wan');
+			var currentstyle = window.getComputedStyle(wan);
+    		var currbackpos = parseInt(currentstyle.getPropertyValue('background-position').split("px")[0]);
+    		var currpos = parseInt(currentstyle.getPropertyValue('left').split("px")[0]);
+			wan.style.backgroundPosition = (currbackpos-250).toString()+"px 0";
+			wan.style.left = (currpos+100).toString()+"px";
+		}
+		function moveBackward(){
+			var wan = document.getElementById('wan');
+			var currentstyle = window.getComputedStyle(wan);
+    		var currbackpos = parseInt(currentstyle.getPropertyValue('background-position').split("px")[0]);
+    		var currpos = parseInt(currentstyle.getPropertyValue('left').split("px")[0]);
+			wan.style.backgroundPosition = (currbackpos+250).toString()+"px 0";
+			wan.style.left = (currpos-100).toString()+"px";
+		}
+		function nameWan(){
+			var wan = document.getElementById('wan');
+			wan.title = document.getElementById('wanName').value;
+		}
+	</script>
+</html>

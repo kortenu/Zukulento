@@ -1,0 +1,69 @@
+body{
+	background: #878787;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.background{
+	width: 80%;
+	height: 370px;
+	margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #E4E4E4;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	border-radius: 15px;
+}
+#wan{
+	position: relative;
+	top:0;
+	left: 0;
+	width: 260px;
+	height: 370px;
+	background:url("char.png") -30px 0px; 
+}
+.panel{
+	width: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #E4E4E4;
+	margin-top: 2%;
+	padding: 1%;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+.panel li{
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	padding-top: 6px;
+}
+#wanName{
+	width: 80%;
+	border:none;
+	background-color: #E4E4E4;
+	border-bottom: 1px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+.panel a{
+	background: #878787;
+	color: #fff;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.panel a:hover{
+	font-weight: bold;
+	background: #E4E4E4;
+}
+
+.panel a:active{
+	text-decoration: underline;
+}

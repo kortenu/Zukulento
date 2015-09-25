@@ -21,11 +21,9 @@ header{
 }
 .logo{
 	margin-left: 5%;
-	padding-top: 2%;
 }
 .logo h1{
 	width: 200px;
-	margin: 0;
 }
 .logo ul li{
 	display: inline-block;
